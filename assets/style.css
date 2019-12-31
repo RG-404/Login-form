@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #888888;
+  background: url(./img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+.check {
+  border: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+div {
+  border: 0px solid violet;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px auto;
+      grid-template-columns: 500px auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login {
+  padding: 50px;
+  background-color: white;
+  -webkit-box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.315);
+          box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.315);
+}
+
+.login a:hover {
+  opacity: 0.7;
+}
+
+.login h1 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.login h1 .first {
+  color: #959595;
+}
+
+.login p {
+  color: #959595;
+  font-family: "Quicksand", sans-serif;
+  width: 500px;
+}
+
+.login h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.login .loginform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .loginform .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: 1px solid grey;
+  height: 40px;
+  width: 25em;
+}
+
+.login .loginform .group .line {
+  height: 40px;
+  width: 0px;
+  position: absolute;
+  border-left: solid blue;
+  background-color: blue;
+  opacity: 0;
+}
+
+.login .loginform .group .userandpass {
+  padding: 5px;
+  padding-left: 20px;
+  left: 50px;
+  outline: none;
+  border: none;
+  width: 30em;
+}
+
+.login .loginform .group .userandpass:focus {
+  outline: none;
+  border: none;
+}
+
+.login .loginform .group label {
+  background-color: white;
+  cursor: text;
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  color: #959595;
+  width: 75px;
+  text-align: center;
+}
+
+.login .loginform .group .userandpass:focus ~ label, .login .loginform .group .userandpass:valid ~ label {
+  top: -8px;
+  font-size: 13px;
+  color: blue;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  background-color: white;
+}
+
+.login .loginform .group .userandpass:focus ~ .line, .login .loginform .group .userandpass:valid ~ .line {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  width: 10px;
+  opacity: 1;
+  background-color: white;
+}
+
+.login .loginform .top {
+  border-bottom: none;
+}
+
+.login .loginform .block {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 25em;
+}
+
+.login .loginform .buttons {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.login .loginform .submitbutton {
+  cursor: pointer;
+  outline: none;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 8em;
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transition: -webkit-transform 85ms linear;
+  transition: -webkit-transform 85ms linear;
+  transition: transform 85ms linear;
+  transition: transform 85ms linear, -webkit-transform 85ms linear;
+}
+
+.login .loginform .submitbutton:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.login .loginform .signin, .login .loginform .signup {
+  margin-left: 0px;
+}
+
+.login .loginform .buttons .signin:hover {
+  background-color: #3a3a3a;
+}
+
+.login .loginform .buttons .signup {
+  background-color: white;
+  color: #3a3a3a;
+}
+
+.show {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+.show nav {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.show nav ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.show nav ul li {
+  text-align: center;
+  padding: 10px;
+  height: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.show nav ul li a {
+  color: white;
+}
+
+.show nav ul li:hover {
+  -webkit-transition: all 0.15s 0.05s ease-in-out;
+  transition: all 0.15s 0.05s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+
+.show nav ul li:hover a {
+  color: black;
+}
+
+.show .new {
+  background-color: rgba(0, 0, 0, 0.39);
+  color: white;
+  font-size: 10vh;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 20vh;
+}
+
+.show .new span {
+  font-size: 7vh;
+  font-weight: 200;
+  background-color: blue;
+  padding: 30px;
+}
+
+.show .new p {
+  margin-bottom: 0px;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+.register {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+  .show nav ul {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .show .new {
+    font-size: 25px;
+  }
+  .show .new span {
+    font-size: 17px;
+    font-weight: 200;
+    background-color: blue;
+    padding: 10px;
+  }
+  .show .new p {
+    margin-bottom: 0px;
+    padding-top: 8vh;
+    padding-bottom: 1vh;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .show nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .show {
+    width: 100vw;
+    background: url(./img/cover.jpg);
+  }
+  .show nav ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .new {
+    visibility: hidden;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade 1s ease-in-out 0s forwards;
+          animation: fade 1s ease-in-out 0s forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
