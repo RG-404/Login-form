@@ -1,60 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Document</title>
 </head>
-
 <body>
     <!-- main container -->
     <div class="wrapper">
         <!-- login form block -->
         <div class="login">
+            <!-- form central area -->
             <div class="loginarea">
-                <div class="welcome">
-                    <h1> <span class="first">Welcome </span>Folk</h1>
-                    <p class="description">Lorem ipsum dolor sit!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="loginform">
+                <h1> <span class="first">Welcome </span>Folk</h1>
+                <p class="description">Lorem ipsum dolor sit!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
                     <h2>LOGIN</h2>
-                    <form name="login" action="" method="" target="">
-                        
-                        <!-- animated input box -->
-                        <div class="group top">
+                    <form class="loginform" name="login" action="" method="" target="">
+                        <div class="group top">  
                             <input class="userandpass" type="text" name="username" required>
-                            <div class="line"></div>
+                            <div class="line"></div> 
                             <label>Username</label>
                         </div>
-
-                        <!-- animated input box -->
-                        <div class="group">
-                            <input class="userandpass" type="password" name="password" required>
+                        <div class="group"> 
+                            <input  class="userandpass" type="password" name="password" required>
                             <div class="line"></div>
                             <label>Password</label>
                         </div>
-
-                        <!-- remember me and forgot password -->
                         <div class="block">
                             <div>
-                                <input class="check" type="checkbox"><label>Remember Me</label>
+                                <input class="check"    type="checkbox"><label>Remember Me</label>
                             </div>
                             <span><a href="#">Forgot Password?</a></span>
-                        </div>
-
-                        <!-- login and register button -->
+                        </div>  
                         <div class="buttons">
                             <input class="submitbutton signin" type="submit" value="Login">
-                            <input class="submitbutton signup" type="button" value="Register"
-                                onclick="window.location.href = 'register.html';">
+                             <input class="submitbutton signup" type="submit" value="Register">
                         </div>
                     </form>
-                </div class="loginform">
-            </div>
-
+             </div>
+             
         </div>
         <!-- right block -->
         <div class="show">
@@ -73,5 +60,4 @@
         </div>
     </div>
 </body>
-
 </html>

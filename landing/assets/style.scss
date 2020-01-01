@@ -16,7 +16,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     font-family: $hFont;
 }
@@ -37,7 +36,7 @@ div {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 500px auto;
+    grid-template-columns: 30rem auto;
     height: 100vh;
     width: 100vw;
     // flex-direction: row;
@@ -292,13 +291,16 @@ div {
 }
 
 @media only screen and (max-width: 700px) {
-    .wrapper {
-        grid-template-columns: 1fr;
+    body{
+        background: white;
     }
-    
+    .wrapper {
+        grid-template-columns: 100%;
+    }
 
     .show {
         width: 100vw;
+        height: 250px;
         background: url(./img/cover.jpg);
         nav {
             ul {

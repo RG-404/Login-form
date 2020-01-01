@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.welcome {
+  margin: auto;
+  padding: 10px;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome * {
+  padding: 0;
+  margin: 0;
+}
+
+.welcome h1 {
+  margin-bottom: 10px;
+}
+
+.welcome h1 span {
+  color: grey;
+}
+
+.welcome p {
+  margin: 5px;
+}
+
+.loginform {
+  margin: auto;
+  padding: 10px;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginform .group {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  border: 1px solid grey;
+  height: 40px;
+  width: 250px;
+}
+
+.loginform .group .line {
+  height: 40px;
+  width: 0px;
+  position: absolute;
+  border-left: solid blue;
+  opacity: 0;
+}
+
+.loginform .group .userandpass {
+  padding: 5px;
+  padding-left: 20px;
+  left: 50px;
+  outline: none;
+  border: none;
+}
+
+.loginform .group .userandpass:focus {
+  outline: none;
+  border: none;
+}
+
+.loginform .group label {
+  background-color: white;
+  cursor: text;
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 20px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  color: gray;
+  width: 75px;
+  text-align: center;
+}
+
+.loginform .group .userandpass:focus ~ label, .loginform .group .userandpass:valid ~ label {
+  top: -8px;
+  font-size: 13px;
+  color: blue;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  background-color: white;
+}
+
+.loginform .group .userandpass:focus ~ .line, .loginform .group .userandpass:valid ~ .line {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  width: 10px;
+  opacity: 1;
+  background-color: white;
+}
+
+.loginform .top {
+  border-bottom: none;
+}
+/*# sourceMappingURL=style0.css.map */

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.welcome {
+    margin: auto;
+    padding: 10px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        span {
+            color: grey;
+        }
+    }
+    p {
+        margin: 5px;
+    }
+}
+
+.loginform {
+    margin: auto;
+    padding: 10px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+
+    .group {
+        display: grid;
+        position: relative;
+        border: 1px solid grey;
+        height: 40px;
+        width: 250px;
+
+        .line{
+            height: 40px;
+            width: 0px;
+            position: absolute;
+            border-left: solid blue;
+            opacity: 0;
+        }
+        
+        .userandpass {
+            padding: 5px;
+            padding-left: 20px;
+            left: 50px;
+            outline: none;
+            border: none;
+            
+         }
+
+        .userandpass:focus{
+            outline: none;
+            border: none;
+         }
+
+        label {
+            background-color: rgb(255, 255, 255);
+            cursor: text;
+            position: absolute;
+            pointer-events:none;
+            top: 10px;
+            left: 20px;
+            transition: all 0.2s linear;
+            font-size: 16px;
+            color: gray;
+            width: 75px;
+            text-align: center;
+        } 
+
+        .userandpass:focus ~ label, .userandpass:valid ~ label{
+            top: -8px;
+            font-size: 13px;
+            color: blue;
+            transition: all 0.1s linear;
+            background-color: white;
+        }
+
+        .userandpass:focus ~ .line, .userandpass:valid ~ .line{
+            transition: all 0.1s linear;
+            width: 10px;
+            opacity: 1;
+            background-color: white;
+        }
+        
+         
+
+    }
+
+    .top {
+        border-bottom: none;
+    }
+
+}
+
