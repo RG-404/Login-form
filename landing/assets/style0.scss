@@ -45,7 +45,6 @@ body {
         position: relative;
         border: 1px solid grey;
         height: 40px;
-        width: 250px;
 
         .line{
             height: 40px;
@@ -61,7 +60,6 @@ body {
             left: 50px;
             outline: none;
             border: none;
-            
          }
 
         .userandpass:focus{
@@ -92,7 +90,7 @@ body {
         }
 
         .userandpass:focus ~ .line, .userandpass:valid ~ .line{
-            transition: all 0.1s linear;
+            transition: all 0.2s linear;
             width: 10px;
             opacity: 1;
             background-color: white;
@@ -100,11 +98,60 @@ body {
         
          
 
-    }
+    } //group ends here
 
     .top {
         border-bottom: none;
     }
 
-}
+    .block {
+        padding: 20px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .submitbutton {
+            width: 8rem;
+            padding: 10px;
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid grey;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            transition: transform 85ms linear;
+        }
+    
+        .submitbutton:active {
+            transform: scale(0.9);
+        }
+    
+        .signin , .signup{
+            margin-left: 0px;
+        }
+         
+        .signin {
+            color:white;
+            background-color: black;
+        }
+
+        .signup {
+            color: rgb(78, 78, 78);
+            background-color: white;
+        }
+
+    }
+
+    .buttons {
+
+        .signin:hover {
+            background-color: rgb(58, 58, 58);
+        }
+    }
+
+} //loginform ends here
 
