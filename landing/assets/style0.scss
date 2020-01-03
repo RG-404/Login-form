@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
 }
@@ -17,6 +16,34 @@ a {
 
 a:hover {
     opacity: 0.5;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logo {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.418);
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
 }
 
 .welcome {
@@ -186,7 +213,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80vw;
+    background-color: grey;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.418);
+    width: 100vw;
     nav {
         ul {
             list-style: none;
@@ -201,9 +231,19 @@ a:hover {
         }
     }
     .new {
+        border-radius: 20px 20px 0px 0px;
+        font-size: 15px;
+        width: 50vw;
+        padding: 10px;
+        background-color: black;
+        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
+        * {
+            margin: 0;
+            padding: 0;
+        }
     }
 } //show ends here
 
