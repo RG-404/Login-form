@@ -206,3 +206,23 @@ a:hover {
         align-items: center;
     }
 } //show ends here
+
+
+//animations
+
+.fade-in {
+    -webkit-animation: fade 1s ease-in-out 0s forwards;
+            animation: fade 1s ease-in-out 0s forwards;
+  }
+
+//Keyframes
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
