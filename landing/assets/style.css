@@ -1,69 +1,87 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
-html,
 body {
   margin: 0;
   padding: 0;
-  background: #888888;
-  background: url(./img/cover.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  font-family: "Quicksand", sans-serif;
-}
-
-.check {
-  border: none;
+  width: 100vw;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 
 a {
-  color: black;
   text-decoration: none;
+  color: black;
 }
 
-div {
-  border: 0px solid violet;
+a:hover {
+  opacity: 0.5;
 }
 
 .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30rem auto;
-      grid-template-columns: 30rem auto;
-  height: 100vh;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.logo {
+  height: 10vh;
   width: 100vw;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.418);
+          box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.418);
 }
 
 .login {
-  padding: 50px;
-  background-color: white;
-  -webkit-box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.315);
-          box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.315);
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.login a:hover {
-  opacity: 0.7;
+.loginarea {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
-.login h1 {
-  font-family: "Quicksand", sans-serif;
+.cover-up {
+  background-image: url(./img/cover-up.png);
+  background-size: cover;
+  background-position: 0 -40vh;
+  background-repeat: no-repeat;
 }
 
-.login h1 .first {
-  color: #959595;
+.cover-in {
+  background-image: url(./img/cover-in.png);
+  background-size: cover;
+  background-position: 0 -10vh;
+  background-repeat: no-repeat;
 }
 
-.login p {
-  color: #959595;
-  font-family: "Quicksand", sans-serif;
-  width: 500px;
-}
-
-.login h2 {
-  font-family: "Quicksand", sans-serif;
-}
-
-.login .loginform {
+.welcome {
+  margin: auto;
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,40 +91,67 @@ div {
           flex-direction: column;
 }
 
-.login .loginform .group {
+.welcome * {
+  padding: 0;
+  margin: 0;
+}
+
+.welcome h1 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.welcome h1 span {
+  color: white;
+}
+
+.welcome p {
+  color: white;
+}
+
+.loginform {
+  margin: 20px auto;
+  padding: 10px;
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginform .group {
+  display: -ms-grid;
+  display: grid;
   position: relative;
   border: 1px solid grey;
   height: 40px;
-  width: 25em;
 }
 
-.login .loginform .group .line {
+.loginform .group .line {
   height: 40px;
   width: 0px;
   position: absolute;
   border-left: solid blue;
-  background-color: blue;
   opacity: 0;
 }
 
-.login .loginform .group .userandpass {
+.loginform .group .userandpass {
   padding: 5px;
   padding-left: 20px;
   left: 50px;
   outline: none;
   border: none;
-  width: 30em;
 }
 
-.login .loginform .group .userandpass:focus {
+.loginform .group .userandpass:focus {
   outline: none;
   border: none;
 }
 
-.login .loginform .group label {
+.loginform .group label {
   background-color: white;
   cursor: text;
   position: absolute;
@@ -116,12 +161,10 @@ div {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   font-size: 16px;
-  color: #959595;
-  width: 75px;
-  text-align: center;
+  color: gray;
 }
 
-.login .loginform .group .userandpass:focus ~ label, .login .loginform .group .userandpass:valid ~ label {
+.loginform .group .userandpass:focus ~ label, .loginform .group .userandpass:valid ~ label {
   top: -8px;
   font-size: 13px;
   color: blue;
@@ -130,78 +173,35 @@ div {
   background-color: white;
 }
 
-.login .loginform .group .userandpass:focus ~ .line, .login .loginform .group .userandpass:valid ~ .line {
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+.loginform .group .userandpass:focus ~ .line, .loginform .group .userandpass:valid ~ .line {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   width: 10px;
   opacity: 1;
   background-color: white;
 }
 
-.login .loginform .top {
+.loginform .top {
   border-bottom: none;
+  border-top: 10px solid white;
 }
 
-.login .loginform .block {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 25em;
+.loginform .group {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
 }
 
-.login .loginform .buttons {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.loginform .bottom {
+  border-bottom: 10px solid white;
 }
 
-.login .loginform .submitbutton {
-  cursor: pointer;
-  outline: none;
-  color: white;
-  padding: 10px;
-  margin: 10px;
-  width: 8em;
-  background-color: black;
-  border: 1px solid grey;
-  border-radius: 4px;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  -webkit-transition: -webkit-transform 85ms linear;
-  transition: -webkit-transform 85ms linear;
-  transition: transform 85ms linear;
-  transition: transform 85ms linear, -webkit-transform 85ms linear;
+.loginform .bottom-up-only {
+  margin-bottom: 30px;
 }
 
-.login .loginform .submitbutton:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.login .loginform .signin, .login .loginform .signup {
-  margin-left: 0px;
-}
-
-.login .loginform .buttons .signin:hover {
-  background-color: #3a3a3a;
-}
-
-.login .loginform .buttons .signup {
-  background-color: white;
-  color: #3a3a3a;
-}
-
-.show {
-  height: 100vh;
+.loginform .block {
+  margin-top: 30px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,123 +209,159 @@ div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-items: center;
+  color: white;
 }
 
-.show nav {
-  font-weight: bolder;
-  font-size: 20px;
+.loginform .buttons {
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loginform .buttons .sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loginform .buttons p {
+  font-size: 2rem;
+}
+
+.loginform .buttons .submitbutton {
+  padding: 10px;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 3rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+  color: white;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transition: -webkit-transform 85ms linear;
+  transition: -webkit-transform 85ms linear;
+  transition: transform 85ms linear;
+  transition: transform 85ms linear, -webkit-transform 85ms linear;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.52);
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.52);
+  cursor: pointer;
+}
+
+.loginform .buttons .submitbutton:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.52);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.52);
+}
+
+.loginform .buttons a {
+  text-decoration: underline;
+}
+
+.loginform .buttons .submitbutton:hover {
+  background-color: #3a3a3a;
+}
+
+.show {
+  margin: auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: grey;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.418);
+          box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.418);
+  width: 100vw;
 }
 
 .show nav ul {
   list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
 }
 
 .show nav ul li {
-  text-align: center;
+  margin: 0;
   padding: 10px;
-  height: 25px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.show nav ul li a {
-  color: white;
-}
-
-.show nav ul li:hover {
-  -webkit-transition: all 0.15s 0.05s ease-in-out;
-  transition: all 0.15s 0.05s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.589);
-}
-
-.show nav ul li:hover a {
-  color: black;
 }
 
 .show .new {
-  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 20px 20px 0px 0px;
+  font-size: 15px;
+  width: 50vw;
+  padding: 10px;
+  background-color: black;
   color: white;
-  font-size: 10vh;
-  font-weight: 700;
-  text-align: right;
-  margin-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.show .new span {
-  font-size: 7vh;
-  font-weight: 200;
-  background-color: blue;
-  padding: 30px;
-}
-
-.show .new p {
-  margin-bottom: 0px;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-}
-
-.register {
-  visibility: hidden;
-}
-
-@media only screen and (max-width: 950px) {
-  .show nav ul {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .show .new {
-    font-size: 25px;
-  }
-  .show .new span {
-    font-size: 17px;
-    font-weight: 200;
-    background-color: blue;
-    padding: 10px;
-  }
-  .show .new p {
-    margin-bottom: 0px;
-    padding-top: 8vh;
-    padding-bottom: 1vh;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .show nav ul {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  body {
-    background: white;
-  }
-  .wrapper {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-  .show {
-    width: 100vw;
-    height: 250px;
-    background: url(./img/cover.jpg);
-  }
-  .show nav ul {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .new {
-    visibility: hidden;
-  }
+.show .new * {
+  margin: 0;
+  padding: 0;
 }
 
 .fade-in {
   -webkit-animation: fade 1s ease-in-out 0s forwards;
-          animation: fade 1s ease-in-out 0s forwards;
+  animation: fade 1s ease-in-out 0s forwards;
 }
 
 @-webkit-keyframes fade {
@@ -349,4 +385,24 @@ div {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 350px) {
+  body {
+    font-size: 16px;
+  }
+  .block {
+    margin-top: 20px !important;
+  }
+  .block p {
+    margin-top: 10px;
+  }
+  .buttons p {
+    margin: 0;
+  }
+  .buttons .submitbutton {
+    height: 60px !important;
+    width: 60px !important;
+    font-size: 35px !important;
+  }
+}
+/*# sourceMappingURL=style-in.css.map */
