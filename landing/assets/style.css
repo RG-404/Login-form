@@ -46,7 +46,7 @@ a:hover {
           box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.418);
 }
 
-.login {
+.main {
   width: 100vw;
   height: 90vh;
   display: -webkit-box;
@@ -60,7 +60,7 @@ a:hover {
           align-items: center;
 }
 
-.loginarea {
+.form-area {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -68,7 +68,7 @@ a:hover {
 .cover-up {
   background-image: url(./img/cover-up.png);
   background-size: cover;
-  background-position: 0 -40vh;
+  background-position: 0 -20vh;
   background-repeat: no-repeat;
 }
 
@@ -109,7 +109,7 @@ a:hover {
   color: white;
 }
 
-.loginform {
+.real-form {
   margin: 20px auto;
   padding: 10px;
   width: 80vw;
@@ -122,7 +122,7 @@ a:hover {
           flex-direction: column;
 }
 
-.loginform .group {
+.real-form .group {
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -130,7 +130,7 @@ a:hover {
   height: 40px;
 }
 
-.loginform .group .line {
+.real-form .group .line {
   height: 40px;
   width: 0px;
   position: absolute;
@@ -138,7 +138,7 @@ a:hover {
   opacity: 0;
 }
 
-.loginform .group .userandpass {
+.real-form .group .userandpass {
   padding: 5px;
   padding-left: 20px;
   left: 50px;
@@ -146,12 +146,12 @@ a:hover {
   border: none;
 }
 
-.loginform .group .userandpass:focus {
+.real-form .group .userandpass:focus {
   outline: none;
   border: none;
 }
 
-.loginform .group label {
+.real-form .group label {
   background-color: white;
   cursor: text;
   position: absolute;
@@ -164,7 +164,7 @@ a:hover {
   color: gray;
 }
 
-.loginform .group .userandpass:focus ~ label, .loginform .group .userandpass:valid ~ label {
+.real-form .group .userandpass:focus ~ label, .real-form .group .userandpass:valid ~ label {
   top: -8px;
   font-size: 13px;
   color: blue;
@@ -173,7 +173,7 @@ a:hover {
   background-color: white;
 }
 
-.loginform .group .userandpass:focus ~ .line, .loginform .group .userandpass:valid ~ .line {
+.real-form .group .userandpass:focus ~ .line, .real-form .group .userandpass:valid ~ .line {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   width: 10px;
@@ -181,25 +181,25 @@ a:hover {
   background-color: white;
 }
 
-.loginform .top {
+.real-form .top {
   border-bottom: none;
   border-top: 10px solid white;
 }
 
-.loginform .group {
+.real-form .group {
   border-left: 10px solid white;
   border-right: 10px solid white;
 }
 
-.loginform .bottom {
+.real-form .bottom {
   border-bottom: 10px solid white;
 }
 
-.loginform .bottom-up-only {
+.real-form .bottom-up-only {
   margin-bottom: 30px;
 }
 
-.loginform .block {
+.real-form .block {
   margin-top: 30px;
   padding: 0;
   display: -webkit-box;
@@ -212,7 +212,7 @@ a:hover {
   color: white;
 }
 
-.loginform .buttons {
+.real-form .buttons {
   margin-top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,7 +226,7 @@ a:hover {
           justify-content: space-between;
 }
 
-.loginform .buttons .sign-in {
+.real-form .buttons .sign {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,11 +242,11 @@ a:hover {
           justify-content: space-between;
 }
 
-.loginform .buttons p {
+.real-form .buttons p {
   font-size: 2rem;
 }
 
-.loginform .buttons .submitbutton {
+.real-form .buttons .submitbutton {
   padding: 10px;
   width: 6rem;
   height: 6rem;
@@ -280,18 +280,18 @@ a:hover {
   cursor: pointer;
 }
 
-.loginform .buttons .submitbutton:active {
+.real-form .buttons .submitbutton:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.52);
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.52);
 }
 
-.loginform .buttons a {
+.real-form .buttons a {
   text-decoration: underline;
 }
 
-.loginform .buttons .submitbutton:hover {
+.real-form .buttons .submitbutton:hover {
   background-color: #3a3a3a;
 }
 
@@ -405,4 +405,4 @@ a:hover {
     font-size: 35px !important;
   }
 }
-/*# sourceMappingURL=style-in.css.map */
+/*# sourceMappingURL=style.css.map */
