@@ -40,10 +40,15 @@ a:hover {
 
 .login {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.loginarea {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .cover-up {
@@ -64,7 +69,6 @@ a:hover {
 
 .welcome {
     margin: auto;
-    padding: 10px;
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -171,7 +175,8 @@ a:hover {
     }
 
     .block {
-        padding: 30px 0 0 0;
+        margin-top: 30px;
+        padding: 0;
         display: flex;
         flex-direction: column;
         color: white;
@@ -181,6 +186,7 @@ a:hover {
         margin-top: 0px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
 
         .sign-in {
             display: flex;
@@ -219,14 +225,12 @@ a:hover {
         }
 
         a{
-            margin-top: 20px;
             text-decoration: underline;
         }
 
     }
 
     .buttons {
-
         .submitbutton:hover {
             background-color: rgb(58, 58, 58);
         }
@@ -294,3 +298,28 @@ a:hover {
         opacity: 1;
     }
 }
+
+//Media
+@media only screen and (max-width: 350px) {
+    body {
+        font-size: 16px;
+    }
+   
+    .block {
+        margin-top: 20px !important;
+            p{
+                margin-top: 10px;
+            }
+    }
+
+    .buttons {
+        p {
+            margin: 0;
+        }
+        .submitbutton {
+            height: 60px !important;
+            width: 60px !important;
+            font-size: 35px !important;
+        }
+    }
+  }
