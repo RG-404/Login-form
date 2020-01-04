@@ -60,6 +60,20 @@ a:hover {
           align-items: center;
 }
 
+.cover-up {
+  background-image: url(./img/cover-up.png);
+  background-size: cover;
+  background-position: 0 -40vh;
+  background-repeat: no-repeat;
+}
+
+.cover-in {
+  background-image: url(./img/cover-in.png);
+  background-size: cover;
+  background-position: 0 -10vh;
+  background-repeat: no-repeat;
+}
+
 .welcome {
   margin: auto;
   padding: 10px;
@@ -80,18 +94,19 @@ a:hover {
 
 .welcome h1 {
   margin-bottom: 10px;
+  color: white;
 }
 
 .welcome h1 span {
-  color: grey;
+  color: white;
 }
 
 .welcome p {
-  margin: 5px;
+  color: white;
 }
 
 .loginform {
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 10px;
   width: 80vw;
   display: -webkit-box;
@@ -164,9 +179,19 @@ a:hover {
 
 .loginform .top {
   border-bottom: none;
+  border-top: 10px solid white;
+}
+
+.loginform .group {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
 }
 
 .loginform .bottom {
+  border-bottom: 10px solid white;
+}
+
+.loginform .bottom-up-only {
   margin-bottom: 30px;
 }
 
@@ -179,6 +204,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: white;
 }
 
 .loginform .buttons {
@@ -352,4 +378,4 @@ a:hover {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style0.css.map */
+/*# sourceMappingURL=style-in.css.map */

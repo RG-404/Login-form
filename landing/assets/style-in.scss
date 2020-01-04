@@ -46,6 +46,22 @@ a:hover {
     align-items: center;
 }
 
+.cover-up {
+    background-image: url(./img/cover-up.png);
+    background-size: cover;
+    background-position: 0 -40vh;
+    background-repeat: no-repeat;
+
+}
+
+.cover-in {
+    background-image: url(./img/cover-in.png);
+    background-size: cover;
+    background-position: 0 -10vh;
+    background-repeat: no-repeat;
+
+}
+
 .welcome {
     margin: auto;
     padding: 10px;
@@ -60,17 +76,18 @@ a:hover {
 
     h1 {
         margin-bottom: 10px;
+        color: white;
         span {
-            color: grey;
+            color: rgb(255, 255, 255);
         }
     }
     p {
-        margin: 5px;
+        color: white;
     }
 }
 
 .loginform {
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 10px;
     width: 80vw;
     display: flex;
@@ -137,9 +154,19 @@ a:hover {
 
     .top {
         border-bottom: none;
+        border-top: 10px solid white;
+    }
+
+    .group {
+        border-left: 10px solid white;
+        border-right: 10px solid white;
     }
 
     .bottom {
+        border-bottom: 10px solid white;
+    }
+
+    .bottom-up-only {
         margin-bottom: 30px;
     }
 
@@ -147,6 +174,7 @@ a:hover {
         padding: 30px 0 0 0;
         display: flex;
         flex-direction: column;
+        color: white;
     }
 
     .buttons {
