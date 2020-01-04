@@ -138,7 +138,7 @@ a:hover {
   opacity: 0;
 }
 
-.real-form .group .userandpass {
+.real-form .group .text-area {
   padding: 5px;
   padding-left: 20px;
   left: 50px;
@@ -146,7 +146,7 @@ a:hover {
   border: none;
 }
 
-.real-form .group .userandpass:focus {
+.real-form .group .text-area:focus {
   outline: none;
   border: none;
 }
@@ -164,7 +164,7 @@ a:hover {
   color: gray;
 }
 
-.real-form .group .userandpass:focus ~ label, .real-form .group .userandpass:valid ~ label {
+.real-form .group .text-area:focus ~ label, .real-form .group .text-area:valid ~ label {
   top: -8px;
   font-size: 13px;
   color: blue;
@@ -173,7 +173,7 @@ a:hover {
   background-color: white;
 }
 
-.real-form .group .userandpass:focus ~ .line, .real-form .group .userandpass:valid ~ .line {
+.real-form .group .text-area:focus ~ .line, .real-form .group .text-area:valid ~ .line {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   width: 10px;
